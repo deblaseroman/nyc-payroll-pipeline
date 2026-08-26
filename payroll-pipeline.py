@@ -28,6 +28,5 @@ with open(INPUT, "r", encoding="utf-8") as infile, \
          writer.writerow({col: row[col] for col in KEEP_COLUMNS})
 
 
-Get-Content payroll_trimmed.csv | Measure-Object -Line
 
 print("done")
