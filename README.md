@@ -13,7 +13,8 @@ Python → Azure Blob Storage → Azure Data Factory → Snowflake → SQL
 - **Azure Blob Storage** holds the raw file
 - **Azure Data Factory** copies it into Snowflake via a staged COPY INTO
 - **Snowflake** stores the raw layer and runs the analytics SQL
-
+![ADF pipeline run](docs/adf_pipeline_run.png)
+*200,000 rows loaded from Blob Storage into Snowflake, 0 skipped.*
 **Note** For this single file, Python could load directly to snowflake. Data Factory is included for my personal exposure to the software.
 
 200,000 records across 73 agencies.
@@ -51,7 +52,7 @@ Deckhand is transportation, that runs 24/7 in NYC and is on a fixed schedule so 
 
 ### Individual concentration
 About 2.67% (5,109 people) earn more than half of their regular pay again in overtime. Correction Officer has about 2,210 heavy overtime earners. Thats 43% of all 5,109 across the city. Captain adds 331 and Warden adds 46. Correction accounts for half the city's heavy overtime population. 
-
+![Heavy overtime by title](docs/heavy_ot_by_title.png)
 Worth noting that the title with the highest overtime ratio (Captain, 57.22%) is not the title with the most heavy overtime earners, thats (Correction Officer, 2,210). Ration finds the most extreme cases and count finds where the money is. 
 
 ## Data quality notes
