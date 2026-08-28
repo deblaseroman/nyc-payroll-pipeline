@@ -34,7 +34,7 @@ Ranked 25 agencies with 500+ employees by overtime as a share of
 regular payroll.
 
 Top three:
-1. Department of Correction — 41.81%
+1. Department of Correction — 40.81%
 2. Board of Election — 24.08%
 3. Department of Transportation — 19.54%
 
