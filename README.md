@@ -59,6 +59,15 @@ Worth noting that the title with the highest overtime ratio (Captain, 57.22%) is
 
 `base_salary` is not comparable across records — `pay_basis` varies between per Annum, per Hour, per Day, and Prorated Annual. The analysis uses actual dollars paid instead.
 
+
+## Dashboard
+
+Built in Power BI Desktop, connected to Snowflake via Import mode.
+
+![Power BI dashboard](docs/powerbi_dashboard.png)
+
+Import rather than DirectQuery so the file remains usable after the Snowflake trial expires. Aggregations are DAX measures rather than calculated columns and overtime percentage is a ratio of sums, which has to be computed at the grouping level rather than averaged across rows.
+
 ## Repo structure
 
 - `extract_payroll.py` — API extract and column trim
